@@ -1,0 +1,8 @@
+<h1>ADD NEW BOOK</h1>
+<form method="post"> {% csrf_token %}
+    {{book_form.as_p}}
+
+    <button type="submit">save</button>
+    <button type="reset">clear</button>
+
+</form>
